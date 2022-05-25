@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Caja Flexible 1</title>
+
+    <style>
+        /* Estilo de caracter global */
+        /* Modificamos la forma de calcular el
+        TAMAÑO del modelo de caja */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo del encabezado */
+        .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        /* Contenedor para flexbox (Cajas Flexibles) */
+        .row {
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        /* Cree tres columnas (cajas flexibles) iguales que se encuentren una al lado de la otra */
+        .column {
+            -webkit-flex: 33.33%;
+            -ms-flex: 33.33%;
+            flex: 33.33%;
+            /* width: 33.33%; */
+            padding: 10px;
+            height: 300px;
+            /* Alto de 300px. Solo para demostración */
+        }
+
+        /* Estilo del pie de página */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Diseño adaptable: hace que las tres columnas se apilen una encima de la otra en lugar de una al lado de la otra. */
+        @media (max-width: 600px) {
+            .row {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>CSS Template using Float</h2>
+    <p>En este ejemplo, hemos creado un encabezado, tres columnas iguales y un pie de página. En pantallas más pequeñas,
+        las columnas se apilarán una encima de la otra.</p>
+    <p>Cambie el tamaño de la ventana del navegador para ver el efecto de respuesta.</p>
+
+    <div class="header">
+        <h2>Header</h2>
+    </div>
+
+    <div class="row">
+        <div class="column" style="background-color:#aaa">Columna01</div>
+        <div class="column" style="background-color:#bbb">Columna02</div>
+        <div class="column" style="background-color:#ccc">Columna03</div>
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+</body>
+
+</html>

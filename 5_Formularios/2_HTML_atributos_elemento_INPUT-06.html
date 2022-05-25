@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>Los atributos mínimo y máximo de entrada</h1>
+    <p>Los atributos min y max especifican los valores mínimo y máximo para un elemento de entrada.</p>
+
+    <form action="https://www.w3schools.com/action_page.php">
+
+        <label for="datemax">Introduzca una fecha anterior a 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        
+        <label for="datemin">Introduzca una fecha posterior a 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+        
+        <label for="quantity">Cantidad (entre 1 y 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+        
+        <input type="submit" value="Submit">
+
+    </form>
+    
+</body>
+
+</html>

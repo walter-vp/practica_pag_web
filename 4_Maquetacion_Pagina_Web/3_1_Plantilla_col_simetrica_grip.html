@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Caja Grilla 1</title>
+
+    <style>
+        /* Estilo de caracter global */
+        /* Modificamos la forma de calcular el
+            TAMAÑO del modelo de caja */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Contenedor GRID principal (cuadrícula o rejilla) */
+        .grid-container {
+            display: grid;
+
+            /* Definimos las áreas del GRID */
+            grid-template-areas:
+                'header header header header header header'
+                'left left middle middle right right'
+                'footer footer footer footer footer footer';
+            /* grid-column-gap: 10px; - si quieres un espacio entre las columnas */
+        }
+
+        /* Estilo del encabezado */
+        .header {
+            grid-area: header;
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        /* Contenedores Secundarios (propiedades comunes) */
+        .left,
+        .middle,
+        .right {
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        /* Vincula las áreas del grid-template-areas*/
+        /* Estilo de la columna de la izquierda */
+        .left {
+            grid-area: left;
+        }
+
+        /* Estilo de la columna del medio */
+        .middle {
+            grid-area: middle;
+        }
+
+        /* Estilo de la columna de la derecha */
+        .right {
+            grid-area: right;
+        }
+
+        /* Estilo del pie de página */
+        .footer {
+            grid-area: footer;
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Diseño adaptable: hace que las tres columnas se apilen una encima de la otra en lugar de una al lado de la otra. */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-areas:
+                    'header header header header header header'
+                    'left left left left left left'
+                    'middle middle middle middle middle middle'
+                    'right right right right right right'
+                    'footer footer footer footer footer footer';
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>CSS Template using Grid</h2>
+    <p>En este ejemplo, hemos creado un encabezado, tres columnas iguales y un pie de página. En pantallas más pequeñas,
+        las columnas se apilarán una encima de la otra.</p>
+    <p>Cambie el tamaño de la ventana del navegador para ver el efecto de respuesta.</p>
+
+    <div class="grid-container">
+
+        <div class="header">
+            <H2>Header</H2>
+        </div>
+
+        <div class="left" style="background-color:#aaa">Columna01</div>
+        <div class="middle" style="background-color:#bbb">Columna02</div>
+        <div class="right" style="background-color:#ccc">Columna03</div>
+
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+</body>
+
+</html>

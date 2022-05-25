@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img { width: 10%; }
+    </style>
+
+</head>
+
+<body>
+    <h2> ¿Atributos o estilo de ancho / alto? </h2>
+
+    <p> La primera imagen usa el atributo de ancho (establecido en 128 píxeles), pero el estilo en la sección del
+        encabezado lo anula y establece el ancho en 100%. </p>
+
+    <img src="img/html5.gif" alt="Icono HTML5" width="128" height="128">
+
+    <p> La segunda imagen usa el atributo de estilo para establecer el ancho en 128 píxeles, esto no será anulado por el
+        estilo en la sección del encabezado: </p>
+
+    <img src="img/html5.gif" alt="Icono HTML5" style="width:128px; height:128 px;">
+</body>
+
+</html>

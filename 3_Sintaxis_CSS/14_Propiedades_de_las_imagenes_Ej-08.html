@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+            font-weight: 500;
+
+            /* Propiedades TEXT SHADOW */
+            -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=112, Color=#000000)";
+            /*IE 8*/
+            text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.7);
+            /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+            filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color=#000000);
+            /*IE 5.5-7*/
+
+            /* Propiedades BOX SHADOW */
+            -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=117, Color=#000000)";
+            /*IE 8*/
+            -moz-box-shadow: 3px 6px 10px -1px rgba(0, 0, 0, 0.4);
+            /*FF 3.5+*/
+            -webkit-box-shadow: 3px 6px 10px -1px rgba(0, 0, 0, 0.4);
+            /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+            box-shadow: 3px 6px 10px -1px rgba(0, 0, 0, 0.4);
+            /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+            filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color=#000000);
+            /*IE 5.5-7*/
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="gallery">
+        <a target="_blank" href="img/img_5terre.jpg">
+            <img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img/img_forest.jpg">
+            <img src="img/img_forest.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img/img_lights.jpg">
+            <img src="img/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img/img_mountains.jpg">
+            <img src="img/img_mountains.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</body>
+
+</html>

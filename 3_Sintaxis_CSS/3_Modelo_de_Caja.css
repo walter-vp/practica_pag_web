@@ -1,0 +1,95 @@
+/* div {
+    background-color: lightgrey;
+    width: 300px;
+    height: 350px;
+    padding: 15px;
+    border: 25px solid navy;
+    margin: 35px;
+} */
+
+p {
+    background-color: lightgrey;
+    width: 300px;
+    height: 350px;
+    padding: 15px;
+    /* border: 25px solid navy; */
+    margin: 35px;
+}
+
+p.clase_a {
+    background-color: lightgrey;
+    width: 300px;
+    height: 150px;
+    padding: 15px;
+    border: 25px solid rgb(151, 65, 15);
+    margin: 35px;
+}
+
+p.clase_b {
+    background-color: lightgrey;
+    width: 300px;
+    height: 150px;
+    padding: 15px 17px 19px 20px;
+    /* border: 25 solid navy; */
+    border-top: 25px solid rgb(151, 65, 15);
+    border-right: 26px solid rgb(151, 65, 15);
+    border-bottom: 27px solid rgb(151, 65, 15);
+    border-left: 28px solid rgb(151, 65, 15);
+    margin: 35px 45px 55px 65px;
+}
+
+p.clase_c 
+    {
+        background-color: lightgrey;
+        width: 300px;
+        height: 150px;
+        padding: 15px 17px 20px;
+        /* border: 25 solid navy; */
+        border-top: 25px solid rgb(151, 65, 15);
+        border-right: 26px solid rgb(151, 65, 15);
+        border-bottom: 27px solid rgb(151, 65, 15);
+        border-left: 26px solid rgb(151, 65, 15);
+        margin: 35px 55px 65px;
+    }
+
+    p.clase_d 
+    {
+        background-color: lightgrey;
+        width: 300px;
+        height: 150px;
+        padding: 15px 20px;
+        /* border: 25 solid navy; */
+        border-top: 25px solid rgb(151, 65, 15);
+        border-right: 26px solid rgb(151, 65, 15);
+        border-bottom: 27px solid rgb(151, 65, 15);
+        border-left: 26px solid rgb(151, 65, 15);
+        margin: 35px 65px;
+    }
+
+    p.clase_e 
+    {
+        background-color: lightgrey;
+        width: 300px;
+        height: 150px;
+        padding: 15px;
+        /* border: 27 solid navy; */
+        border-top: 27px solid rgb(151, 65, 15);
+        border-right: 27px solid rgb(151, 65, 15);
+        border-bottom: 27px solid rgb(151, 65, 15);
+        border-left: 27px solid rgb(151, 65, 15);
+        margin: 65px;
+    }
+    
+    div.color>p {
+        background-color: rgb(238, 195, 195);
+        margin: 0;
+        padding: 0;
+        border: 25px solid rgb(65, 128, 187);
+    }
+  
+    div p.clase_a, div p.clase_b, div p.clase_c, div p.clase_d, div p.clase_e{
+        background-color: lightgrey;
+        margin: 0;
+        padding: 0;
+        border: 25px solid rgb(40, 15, 151);
+    }
