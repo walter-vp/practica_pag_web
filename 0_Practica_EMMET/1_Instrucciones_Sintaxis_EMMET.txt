@@ -14,6 +14,7 @@ predefinido de nombres de etiquetas disponibles, puede escribir cualquier palabr
 
 
 A.  Operadores de anidamiento
+
     Los operadores de anidamiento se utilizan para colocar elementos de abreviatura dentro del árbol generado: si debe
     colocarse dentro o cerca del elemento de contexto.
 
@@ -23,7 +24,7 @@ A.  Operadores de anidamiento
     div>ul>li{Elemento $}
     - Pulsar {CTRL+ESPACIO} y visualizar en el IED.
 
-    div>p{lorem10]>bq{lorem10}
+    div>p{lorem10}>bq{lorem10}
     - Pulsar {CTRL+ESPACIO} y visualizar en el IED.
 
     2. Hermano: +
@@ -74,6 +75,7 @@ A.  Operadores de anidamiento
     Con los grupos, literalmente puede escribir marcas de página completa con una sola abreviatura, pero no lo haga.
 
 B.  Operadores de atributos
+
     Los operadores de atributo se utilizan para modificar atributos de elementos generados. Por ejemplo, en HTML y XML puede
     agregar rápidamente un classatributo al elemento generado.
 
